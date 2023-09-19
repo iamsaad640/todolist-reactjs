@@ -1,0 +1,84 @@
+.Todo--app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.task--input{
+    width: 80%;
+    border:1px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+.task--input button{
+    width:10%;
+    height: 50px;
+    background-color: yellow;
+    border: none;
+
+
+    border-left: 1px solid #6b6b6b;
+}
+
+.task--input input {
+    width:90%;
+    height: 50px;
+    border: none;
+    padding: 10px 15px;
+
+}
+
+.task--input input:focus-visible{
+    outline: none;
+}
+
+.task--list{
+    height: 80vh;
+    overflow: scroll;
+    width:60%;
+
+}
+
+.task--list ul{
+    list-style: none;
+}
+
+.task--list ul li {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.task--list ul li p{
+    white-space: nowrap;
+    overflow-x: scroll;
+    
+}
+
+.task--list ul li #time-ele{
+    margin-left:auto;
+}
+
+.task--list ul li #done-btn{
+    background-color: white;
+    border-radius: 20px;
+    width:30px;
+    height: 30px;
+}
+
+.task--list ul li #done-btn:active{
+    background-color: black;
+}
+
+.task--list ul li #remove-btn{
+    background-color: unset;
+    border:unset;
+    box-shadow: unset;
+    color:red;
+
+}
+
+
