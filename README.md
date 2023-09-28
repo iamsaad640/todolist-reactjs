@@ -10,4 +10,4 @@
 - mark task as done
 - track progress
 
-![Alt text](image.png)
+![Alt text](app-ui.png)
