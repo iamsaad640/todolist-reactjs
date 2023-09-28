@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import Todolist from "./Todolist"
+import logo from './logo.png';
+import Todolist from "./Todolist-Component/Todolist"
 import './App.css';
-import useCount from './useCount';
+import { useState } from 'react';
 
 
 
 function App() {
-  const [count, progress] = useCount();
+
+  const [count, setCount] = useState(0);
+  const [progress, setProgress] = useState(0);
+  
   return (
     <>
 
@@ -15,11 +18,11 @@ function App() {
         <header>
           <img src={logo} className="App-logo" alt="logo" />
           <div className='ProgressBar'>
-            <div className='Progress'></div>
+            <div className='progress' style={{width:`${count !== 0 ? (progress / count) * 100 : 100}%`}}></div>
           </div>
         </header>
         <main>
-          <Todolist/>
+          <Todolist count={count} progress={progress} setCount={setCount} setProgress={setProgress} />
         </main>
 
       </div>

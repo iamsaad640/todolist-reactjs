@@ -21,6 +21,7 @@
 
 
     border-left: 1px solid #6b6b6b;
+    cursor: pointer;
 }
 
 .task--input input {
@@ -33,6 +34,13 @@
 
 .task--input input:focus-visible{
     outline: none;
+}
+
+.err-msg{
+    color: red;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
 }
 
 .task--list{
@@ -67,6 +75,7 @@
     border-radius: 20px;
     width:30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .task--list ul li #done-btn:active{
@@ -78,6 +87,7 @@
     border:unset;
     box-shadow: unset;
     color:red;
+    cursor: pointer;
 
 }
 

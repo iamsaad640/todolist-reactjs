@@ -1,3 +1,13 @@
 # todolist-reactjs
 
-## open for  contribution
+## app for managing tasks
+
+
+## features:
+
+- add task
+- delete task
+- mark task as done
+- track progress
+
+![Alt text](image.png)
