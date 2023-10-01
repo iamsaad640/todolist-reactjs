@@ -47,27 +47,70 @@
     height: 80vh;
     overflow: scroll;
     width:60%;
-
 }
 
 .task--list ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .task--list ul li {
     display: flex;
-    align-items: center;
-    gap:20px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #8a8a8a;
+    width: 100%;
+}
+
+.task--list ul li:last-child {
+    border-bottom: none;
 }
 
 .task--list ul li p{
     white-space: nowrap;
     overflow-x: scroll;
-    
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.task--list ul li p::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.task--list ul li p::-webkit-scrollbar-thumb {
+    background-color: #8a8a8a;
+    border-radius: 5px; /* Updated border-radius */
+}
+
+.task--list ul li .row1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.task--list ul li .row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.task--list ul li h3 {
+    margin: 0;
+}
+
+.task--list ul li h4 {
+    margin: 0;
 }
 
 .task--list ul li #time-ele{
-    margin-left:auto;
+    margin: 0;
 }
 
 .task--list ul li #done-btn{
@@ -88,7 +131,7 @@
     box-shadow: unset;
     color:red;
     cursor: pointer;
-
 }
+
 
 
