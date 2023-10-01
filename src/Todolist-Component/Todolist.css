@@ -71,7 +71,8 @@
 
 .task--list ul li p{
     white-space: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
     text-overflow: ellipsis;
     margin: 0;
 }
